@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Calculate</string>
+    <string name="hintNumber1">first number</string>
+    <string name="hintNumber2">second number</string>
+    <string name="hintResult">Result</string>
+    <string name="plusHint">+</string>
+    <string name="minusHint">-</string>
+    <string name="multiplyHint">*</string>
+    <string name="divideHint">/</string>
+    <string name="resetHint">C</string>
+    <string name="exitHint">E</string>
+    <string name="menu_main_exit">Exit</string>
+    <string name="menu_main_reset">Reset</string>
+
+</resources>

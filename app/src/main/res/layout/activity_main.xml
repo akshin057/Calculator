@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:backgroundTint="@color/background"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolBarMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/buttonsColor"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/EditingNumbers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBarMain"
+        >
+
+        <EditText
+            android:id="@+id/firstNumberET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45sp"
+            android:layout_marginRight="45sp"
+            android:gravity="center"
+            android:hint="@string/hintNumber1"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/textColor" />
+
+        <EditText
+            android:id="@+id/secondNumberET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45sp"
+            android:layout_marginRight="40sp"
+            android:hint="@string/hintNumber2"
+            android:inputType="numberDecimal"
+            android:textColorHint="@color/textColor" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        android:hint="@string/hintResult"
+        android:textSize="36sp"
+        android:textColorHint="@color/textColor"
+        android:gravity="right"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/EditingNumbers"
+        />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintVertical_bias="0.2"
+        app:layout_constraintTop_toBottomOf="@+id/resultTV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical"
+        >
+
+        <Button
+            android:id="@+id/plusBTN"
+            android:layout_width="80sp"
+            android:layout_height="90sp"
+            android:backgroundTint="@color/buttonsColor"
+            android:textSize="30sp"
+            android:hint="@string/plusHint"
+            android:textColorHint="@color/textColor"
+            />
+
+        <Button
+            android:id="@+id/minBTN"
+            android:layout_width="80sp"
+            android:layout_height="90sp"
+            android:backgroundTint="@color/buttonsColor"
+            android:textSize="30sp"
+            android:hint="@string/minusHint"
+            android:textColorHint="@color/textColor"
+            android:layout_marginTop="30sp"
+            />
+
+        <Button
+            android:id="@+id/multiplyBTN"
+            android:layout_width="80sp"
+            android:layout_height="90sp"
+            android:backgroundTint="@color/buttonsColor"
+            android:textSize="30sp"
+            android:hint="@string/multiplyHint"
+            android:textColorHint="@color/textColor"
+            android:layout_marginTop="30sp"
+            />
+
+        <Button
+            android:id="@+id/divideBTN"
+            android:layout_width="80sp"
+            android:layout_height="90sp"
+            android:backgroundTint="@color/buttonsColor"
+            android:textSize="30sp"
+            android:hint="@string/divideHint"
+            android:textColorHint="@color/textColor"
+            android:layout_marginTop="30sp"
+            />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
